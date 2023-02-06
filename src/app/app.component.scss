@@ -17,6 +17,12 @@ $bleu_f: #03266e;
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 .nav_bar .logo a{
@@ -59,7 +65,7 @@ $bleu_f: #03266e;
 /********************************************* Anchor ****************************************/
 
 .anchor {
-    position: absolute;
+    position: fixed;
     bottom: 15px;
     right: 15px;
 }
@@ -73,6 +79,7 @@ $bleu_f: #03266e;
     display: flex;
     width: 30px;
     height: 30px;
+    border-radius: 3px;
     justify-content: center;
     align-items: center;
 }

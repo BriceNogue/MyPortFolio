@@ -1,0 +1,64 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bleu_f: #03266e;
+
+.section {
+    width: 100%;
+}
+
+.section .bg_img {
+    width: 100%;
+}
+
+
+.section .picture {
+    width: 100%;
+}
+
+.section .picture img {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.section .texts {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    padding-left: 2%;
+    color: white;
+}
+
+.texts .text_1 h3 {
+    font-style: italic;
+    font-weight: 100;
+}
+.texts .text_1, .text_2, .text_3 {
+    width: 100%;
+}
+
+.texts .text_2 h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 3%;
+}
+
+.texts .text_3 {
+    width: 40%;
+    margin-top: 3%;
+}
+
+.texts .text_3 p {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
