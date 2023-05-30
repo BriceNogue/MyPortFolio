@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+$bleu_f: #03266e;
+
+/***************************************** projects ********************************/
+
+.poject_header {
+    padding: 5%;
+}
+.projects {
+    width: 100%;
+    padding-left: 1%;
+    padding-bottom: 5%;
+    overflow: scroll;
+    display: flex;
+}
+
+.project_texte p {
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 20px;
+    line-height: 30px;
+    color: #181616;
+    font-weight: 500;
+}
+
+.project_title h1 {
+    color: #03266e;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.project {
+    border-radius: 10px;
+    min-width: 420px; 
+    margin: 10px;
+    box-shadow: 1px 1px 10px $bleu_f;
+}
+
+.project_img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project_txt {
+    color: $bleu_f;
+}
+
+.project_txt h2 {
+    font-size: 15px;
+}
+
+.project_links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.project_link a {
+   text-decoration: none;
+   margin: 10px;
+}

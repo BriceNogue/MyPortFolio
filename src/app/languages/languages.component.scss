@@ -9,23 +9,29 @@ $bleu_f: #03266e;
 
 .section {
     width: 100%;
-    padding: 2%;
     padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
 .languages {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
 .language_txt {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 5%;
 }
 
-.language::after {
+/*.language::after {
     content: "";
     clear: both;
     display: table;
-}
+}*/
 
 .language_title {
     width: 100%;
@@ -39,8 +45,10 @@ $bleu_f: #03266e;
 
 .language_texte p{
     font-size: 15px;
-    line-height: 25px;
-    font-style: normal;
+    margin-top: 15px;
+    line-height: 20px;
+    color: #181616;
+    line-height: 30px;
     font-weight: 500;
 }
 
@@ -51,23 +59,23 @@ $bleu_f: #03266e;
 }
 
 .language {
-    width: 20%;
-    margin: 2%;
+    width: 300px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0.5px 0.5px 10px black;
+    margin: 10px;
     float: left;
+    box-shadow: 0.5px 0.5px 10px black;
+    animation: apparition 0.8s ease-out;
 }
 
 .language .language_image{
+    width: 100%;
     display: flex;
     padding-top: 5px;
     justify-content: center;
 }
 
 .language .language_image img {
-   width: 90%;
+   width: 150px;
 }
 
 .language_name_level {
@@ -75,3 +83,55 @@ $bleu_f: #03266e;
     flex-direction: row;
     justify-content: space-around;
 }
+
+.language_name_level h1{
+   font-size: 30px;
+   font-weight: bold;
+}
+
+/********************************* Responsive *****************************/
+
+@media screen and (max-width: 992px) {
+    .languages {
+        width: 100%;
+    }
+
+    .language_txt {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .language_title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .language_texte {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .languages {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .language_title h1 {
+        color: $bleu_f;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .language_texte p{
+        line-height: 20px;
+    }
+}
+

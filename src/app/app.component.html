@@ -2,19 +2,22 @@
     <div class="logo">
        <a href="#" class="logo_link"> N.W.B </a>
     </div>
-    <nav>
+    <div class="side_nave">
+        <i class="fa fa-bars" style="font-size:24px"></i>
+    </div>
+    <nav class="nav_bar_links">
         <ul class="nav_links">
             <li class="nav_link">
-                <a routerLink="biogrphy">Biography</a>
+                <a routerLink="biography">Biography</a>
             </li>
             <li class="nav_link">
-                <a href="#">Languages</a>
+                <a routerLink="languages">Languages</a>
             </li>
             <li class="nav_link">
-                <a href="#">FrameWorks</a>
+                <a routerLink="frameworks">FrameWorks</a>
             </li>
             <li class="nav_link">
-                <a href="#">Projects</a>
+                <a routerLink="#projects">Projects</a>
             </li>
             <li class="nav_link">
                 <span>
@@ -29,31 +32,42 @@
     <ul class="anchor_links">
         <li class="anchor_link">
             <span>
-                <a href="#">Bio</a>
+                <a href="#biography">Bio</a>
             </span>
         </li>
         <li class="anchor_link">
             <hr>
             <span>
-                <a href="#">Lag</a>
+                <a href="#languages">Lag</a>
             </span>
         </li>
         <li class="anchor_link">
             <hr>
             <span>
-                <a href="#">FW</a>
+                <a href="#frameworks">FW</a>
             </span>
         </li>
         <li class="anchor_link">
             <hr>
             <span>
-                <a href="#">Pro</a>
+                <a href="#projects">Pro</a>
             </span>
         </li>
     </ul>
 </div>
 
-<app-biography></app-biography>
-<app-languages></app-languages>
-
-<!--<router-outlet></router-outlet>-->
+<div class="main">
+    <!--<div id="biography">
+        <app-biography></app-biography>
+    </div>
+    <div id="languages">
+        <app-languages></app-languages>
+    </div>
+    <div id="frameworks">
+        <app-frameworks></app-frameworks>
+    </div>
+    <div id="projects">
+        <app-projects></app-projects>
+    </div>-->
+    <router-outlet></router-outlet>
+</div>

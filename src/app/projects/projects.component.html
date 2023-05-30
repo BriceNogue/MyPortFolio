@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="poject_header col-12">
+        <div class="project_header_txt col-6">
+            <div class="project_title col-12">
+                <h1>Projets r&eacute;alis&eacute;s</h1>
+            </div>
+            <div class="project_texte col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sed repellendus voluptatibus temporibus architecto placeat molestiae sint cupiditate aspernatur? Quaerat minima laboriosam voluptatum reprehenderit in odit aspernatur nesciunt. Accusamus, repellat!</p>
+            </div>
+        </div>
+        <div class="project_svg_img col-6">
+            <img src="../../assets/images/biography_1.png" alt="" width="200px">
+        </div>
+    </div>
+    <div class="projects row">
+        <div class="project col-12" *ngFor="let project of projects">
+            <div class="project_img col-6">
+                <img src="{{ project.image }}" alt="">
+            </div>
+            <div class="project_txt col-6">
+                <div class="col-12">
+                    <h2>Nom: {{ project.name }}</h2>
+                </div>
+                <div class="col-12">
+                    <h2>Langage: {{ project.language }}</h2>
+                </div>
+                <div class="col-12" *ngIf="project.framework != '' ">
+                    <h2>Framework: {{ project.framework }}</h2>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="project_links">
+                    <li class="project_link">
+                        <a href="#">Git</a>
+                    </li>
+                    <li class="project_link">
+                        <a href="#">Figma</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
