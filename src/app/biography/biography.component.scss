@@ -1,163 +1,255 @@
-
 * {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
+$blue: #2E55B7;
 $bleu_f: #0c0c0c;
-$white: #dddada;
+$white: #fafafa;
 
 .biography {
     width: 100%;
-    background: $bleu_f;
+    background: $white;
     display: flex;
-    padding-top: 11.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 11%;
+    padding-right: 10%;
 }
 
 .biography_img {
-    width: 30%;
-    display: flex;
-    align-items: center;
+    width: 65%;
+    position: relative;
 }
 
 .biography_img img {
     width: 100%;
+    position: absolute;
+    top: -20%;
+    left: -10%;
+}
+
+.expe {
+    position: absolute;
+    top: 75%;
+    right: 7%;
+    background: transparentize($color: $bleu_f, $amount: 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    align-items: center;
+
+    p {
+        color: white;
+        margin: 0;
+        font-family: 'Bai Jamjuree', sans-serif;
+
+        strong {
+            font-size: 25px;
+        }
+    }
 }
 
 .biography_txt {
-    width: 70%;
-}
-
-.txt_1 {
-    width: 100%;
+    width: 35%;
+    padding: 12% 0 0 0;
 }
 
 .txt_2 {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .txt_3 {
-    width: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
-.txt_1 h3 {
+/*.txt_1 h3 {
     font-size: 25px;
     color: #8a8a8a;
     font-style: italic;
-}
+}*/
 
 .txt_2 h1 {
-    color: white;
+    color: $bleu_f;
     font-size: 80px;
-    font-weight: bold;
-    line-height: 5rem;
-    font-family: 'Lobster Two', cursive;
+    line-height: 5.2rem;
+    font-family: 'Bai Jamjuree', sans-serif;
     animation: apparition 0.8s ease-out;
 }
 
 .txt_3 p {
+    width: 100%;
+    color: gray;
+    font-size: 15px;
+    text-align: end;
+    font-weight: 600;
+    padding: 0px 0 16px 0;
+}
+
+.txt_3 .btn_d {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 25%;
+}
+
+.txt_3 .btn_d button {
     color: white;
-    font-size: 20px;
-    padding-top: 20px;
-    text-align: justify;
-    line-height: 40px;
+    width: 130px;
+    height: 35px;
+    background: $blue;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50px;
 }
 
 .txt_3 .compets {
-    width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .txt_3 .compets .compet {
     float: left;
 }
 
-.txt_3 .compets .compet span {
-    color: $bleu_f;
-    width: 100px;
-    height: 30px;
-    background: white;
+.txt_3 .compets .compet h3 {
+    padding: 3px 15px 3px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+
+#h3_1 {
+    color: white;
+    background: $blue;
+    width: 75px;
+}
+
+#h3_2 {
+    color: black;
     font-weight: bold;
-    margin-right: 5px;
+    background: transparentize($color: #2E55B7, $amount: 0.2);
+    width: 75px;
+}
+
+#h3_3 {
+    color: black;
+    font-weight: bold;
+    background: lightgray;
+    margin-bottom: 0;
+}
+
+#h3_4 {
+    color: white;
+    background: transparentize($color: $bleu_f, $amount: 0.1);
+    margin-bottom: 0;
+    width: 75px;
 }
 
 /***************************************** Responsive *************************************/
 
-@media  screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .biography {
         display: flex;
         flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
     }
-    
+
     .biography_img {
         width: 100%;
         justify-content: center;
+        position: relative;
+        padding: 0 0 100% 0;
     }
-    
+
     .biography_img img {
-        width: 60%;
+        width: 100%;
+        position: absolute;
+        top: -1%;
+        left: -30%;
     }
-    
+
+    .expe {
+        top: 75%;
+        right: 15%;
+    }
+
     .biography_txt {
         width: 100%;
+        padding: 5% 0 0 0;
     }
-    
+
     .txt_2 {
-        width: 90%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .txt_2 h1 {
+        font-size: 55px;
+        line-height: 3.5rem;
     }
 
     .txt_3 {
         width: 100%;
+        justify-content: flex-start;
     }
-    
-    .txt_1 h3 {
-        font-size: 20px;
-    }
-    
-    .txt_2 h1 {
-        font-size: 70px;
-        font-weight: bold;
-    }
-    
+
     .txt_3 p {
-        font-size: 15.5px;
-        padding-top: 10px;
+        text-align: start;
+    }
+
+    .txt_3 .btn_d {
+        justify-content: flex-start;
+    }
+
+    .txt_3 .compets {
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    .txt_3 .compets .compet h3 {
+        margin-right: 5px;
+        margin-left: 0;
     }
 
 }
 
 
-@media  screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .biography {
         display: flex;
         flex-direction: column;
     }
-    
+
     .biography_img {
         width: 100%;
         padding-top: 0;
         justify-content: center;
     }
-    
+
     .biography_img img {
         width: 70%;
     }
-    
+
     .biography_txt {
         width: 100%;
         padding-top: 20%;
         padding-left: 4%;
         padding-right: 4%;
     }
-    
+
     .txt_2 {
         width: 90%;
     }
@@ -165,23 +257,23 @@ $white: #dddada;
     .txt_3 {
         width: 100%;
     }
-    
+
     .txt_1 h3 {
         color: $white;
         font-size: 20px;
     }
-    
+
     .txt_2 h1 {
         color: white;
         font-size: 45px;
         padding-top: 15px;
         line-height: 3rem;
     }
-    
+
     .txt_3 p {
         font-size: 20px;
         padding-top: 15px;
         line-height: 25px;
     }
 
-}
+}*/

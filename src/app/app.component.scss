@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400&display=swap');
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-*{
+* {
     border: 0;
     margin: none;
     box-sizing: border-box;
     padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 @keyframes apparition {
@@ -13,13 +16,14 @@
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
     }
 }
 
-$bleu_f: #0c0c0c;
+$bleu_f: #363434d5;
 
 .nav_bar {
     display: flex;
@@ -27,10 +31,10 @@ $bleu_f: #0c0c0c;
     flex-wrap: wrap;
     width: 100%;
     min-height: 60px;
-    background: fixed transparentize($color: #0c0c0c, $amount: 0.5);
+    background: fixed transparentize($color: #fafafa, $amount: 1);
     align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -43,12 +47,16 @@ $bleu_f: #0c0c0c;
     display: none;
 }
 
-.nav_bar .logo a{
+/*.nav_bar .logo a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
     font-family: 'Lobster Two', cursive;
+}*/
+
+.nav_bar .logo img {
+    width: 100px;
 }
 
 .nav_links {
@@ -58,25 +66,26 @@ $bleu_f: #0c0c0c;
 }
 
 .nav_link a {
-    color: white;
+    color: $bleu_f;
     text-decoration: none;
     font-size: 15px;
+    font-weight: bold;
     margin-right: 15px;
 }
 
-.nav_link span a {
+.email_link span a {
     margin: 0;
-    color: $bleu_f;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
 }
 
-.nav_link span {
-    background: white;
+.email_link span {
+    background: #2E55B7;
     display: flex;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
+    width: 130px;
+    height: 35px;
+    border-radius: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -124,14 +133,10 @@ $bleu_f: #0c0c0c;
 
 /************************************************ Responsive *****************************/
 
-@media  screen and (max-width: 992px) {
-    
-}
-
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 992px) {
     .nav_bar {
-        
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .side_nave {
@@ -141,4 +146,14 @@ $bleu_f: #0c0c0c;
     .nav_bar_links {
         display: none;
     }
+
+    .email_link {
+        display: none;
+    }
+
+    .nav_bar .logo img {
+        width: 100px;
+    }
 }
+
+@media screen and (max-width: 600px) {}
