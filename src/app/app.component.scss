@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 
 * {
     border: 0;
@@ -141,6 +143,16 @@ $bleu_f: #363434d5;
 
     .side_nave {
         display: block;
+        color: black;
+        font-size: 35px;
+
+        .bi-list {
+            
+        }
+    }
+
+    .nav_bar .logo img {
+        width: 10px;
     }
 
     .nav_bar_links {
