@@ -33,16 +33,12 @@ $bleu_f: #363434d5;
     flex-wrap: wrap;
     width: 100%;
     min-height: 60px;
-    background: fixed transparentize($color: #fafafa, $amount: 1);
+    background: transparent;
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+    position: absolute;
+    z-index: 1;
 }
 
 .side_nave {
@@ -94,7 +90,7 @@ $bleu_f: #363434d5;
 
 /********************************************* Anchor ****************************************/
 
-.anchor {
+/*.anchor {
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -123,7 +119,7 @@ $bleu_f: #363434d5;
 .anchor_link a {
     text-decoration: none;
     color: white;
-}
+}*/
 
 /**************************************** Main ***************************/
 
@@ -152,7 +148,7 @@ $bleu_f: #363434d5;
     }
 
     .nav_bar .logo img {
-        width: 10px;
+        width: 60px;
     }
 
     .nav_bar_links {
@@ -163,9 +159,6 @@ $bleu_f: #363434d5;
         display: none;
     }
 
-    .nav_bar .logo img {
-        width: 100px;
-    }
 }
 
 @media screen and (max-width: 600px) {}
