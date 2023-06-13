@@ -5,18 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BiographyComponent } from './biography/biography.component';
-import { LanguagesComponent } from './languages/languages.component';
-import { Language } from './models/language.model';
-import { FrameworksComponent } from './frameworks/frameworks.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { LatestProgectsComponent } from './latest-progects/latest-progects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BiographyComponent,
-    LanguagesComponent,
-    FrameworksComponent,
     ProjectsComponent,
+    LatestProgectsComponent,
   ],
   imports: [
     BrowserModule,
