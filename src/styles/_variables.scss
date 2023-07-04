@@ -7,6 +7,10 @@ $textColor_dark: white;
 $borderColor_light: black;
 $borderColor_dark: white;
 
+$blue: #2E55B7;
+$bleu_f: #0c0c0c;
+$white: #fafafa;
+
 // mixin that enables css variables in light mode
 @mixin lighten() {
   --bgColor: #{$bgColor_light};

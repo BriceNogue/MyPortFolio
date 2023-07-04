@@ -1,0 +1,73 @@
+@import '../../styles/_variables.scss';
+
+.latest-projects {
+    padding: 7%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    background: white;
+    box-shadow: 0 0 10px 0 $blue;
+    border-radius: 15px;
+
+    .card-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 400px;
+            border-radius: 15px;
+        }
+    }
+
+    .card-body {
+        position: relative;
+        display: flex;
+
+        .project-title {
+            padding: 10px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-weight: bold;
+            }
+        }
+
+        .project-links {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-number {
+            position: absolute;
+            right: -7%;
+            bottom: -50%;
+
+            h1 {
+                background-color: black;
+                box-shadow: 0 0 10px 0 $blue;
+                color: white;
+                border-radius: 10px;
+                width: 40px;
+                height: 40px;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bi-github {
+        font-size: 30px;
+        color: black;
+    }
+}
+
