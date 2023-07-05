@@ -24,7 +24,7 @@
 .biography_img img {
     width: 100%;
     position: absolute;
-    top: -5%;
+    top: -20%;
     left: -10%;
     animation: apparition 0.8s ease-out;
 }
@@ -52,7 +52,7 @@
 
 .biography_txt {
     width: 35%;
-    padding: 20% 0 0 0;
+    padding: 10% 0 0 0;
 }
 
 .txt_2 {
@@ -108,6 +108,10 @@
     border-radius: 50px;
 }
 
+.txt_3 .btn_d button:hover {
+    scale: 1.3;
+}
+
 .txt_3 .compets {
     width: 50%;
     display: flex;
@@ -159,6 +163,74 @@
 }
 
 /***************************************** Responsive *************************************/
+@media screen and (max-width: 992px) {
+    .biography {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .biography_img {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        padding: 0 0 90% 0;
+    }
+
+    .biography_img img {
+        width: 100%;
+        position: absolute;
+        top: -15%;
+        left: -30%;
+    }
+
+    .expe {
+        top: 60%;
+        right: 25%;
+    }
+
+    .biography_txt {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .txt_2 {
+       // width: 100%;
+        justify-content: flex-start;
+    }
+
+    .txt_2 h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    .txt_3 {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .txt_3 p {
+        text-align: start;
+    }
+
+    .txt_3 .btn_d {
+        justify-content: flex-start;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .txt_3 .compets {
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    .txt_3 .compets .compet h3 {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .biography {
@@ -229,55 +301,3 @@
     }
 
 }
-
-
-/*@media screen and (max-width: 600px) {
-    .biography {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .biography_img {
-        width: 100%;
-        padding-top: 0;
-        justify-content: center;
-    }
-
-    .biography_img img {
-        width: 70%;
-    }
-
-    .biography_txt {
-        width: 100%;
-        padding-top: 20%;
-        padding-left: 4%;
-        padding-right: 4%;
-    }
-
-    .txt_2 {
-        width: 90%;
-    }
-
-    .txt_3 {
-        width: 100%;
-    }
-
-    .txt_1 h3 {
-        color: $white;
-        font-size: 20px;
-    }
-
-    .txt_2 h1 {
-        color: white;
-        font-size: 45px;
-        padding-top: 15px;
-        line-height: 3rem;
-    }
-
-    .txt_3 p {
-        font-size: 20px;
-        padding-top: 15px;
-        line-height: 25px;
-    }
-
-}*/
