@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #03266e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Plan_de_travail_1" data-name="Plan de travail 1">
+    <rect class="cls-1" x="-5" y="-5" width="1371" height="773"/>
+    <ellipse class="cls-2" cx="1067" cy="656" rx="43" ry="46"/>
+    <ellipse class="cls-2" cx="1067" cy="610" rx="29" ry="31"/>
+    <circle class="cls-2" cx="1067" cy="579" r="15"/>
+  </g>
+</svg>
