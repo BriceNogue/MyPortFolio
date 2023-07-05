@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,7 +11,8 @@ export class NavBarComponent implements OnInit {
   toggleBtnIcon: any;
   dropDownMenu: any;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.toggleBtn = document.querySelector('.toggle_btn');
@@ -23,9 +24,9 @@ export class NavBarComponent implements OnInit {
     this.dropDownMenu.classList.toggle('open');
     const isOpen = this.dropDownMenu.classList.contains('open');
 
-    if(isOpen) {
+    if (isOpen) {
       this.toggleBtnIcon.classList = 'bi bi-x-lg'
-    }else {
+    } else {
       this.toggleBtnIcon.classList = 'bi bi-list'
     }
   }
