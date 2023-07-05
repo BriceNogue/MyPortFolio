@@ -1,17 +1,38 @@
 @import '../../styles/_variables.scss';
 
+.projects-settings {
+    padding: 7% 8% 0 8%;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-weight: 500;
+    }
+
+    .bi-sliders {
+        background-color: transparentize($color: $bleu_f, $amount: 0.1);
+        color: white;
+        font-size: 30px;
+        padding: 5px 15px 5px 15px;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .latest-projects {
-    padding: 7%;
-    position: relative;
+    padding: 2% 7% 7% 7%;
     display: flex;
     justify-content: space-around;
 }
 
 .card {
     width: 30%;
+    max-height: 470px;
     background: white;
     box-shadow: 0 0 10px 0 $blue;
     border-radius: 15px;
+    transition: ease 0.5s;
 
     .card-img {
         width: 100%;
@@ -34,7 +55,7 @@
             align-items: center;
 
             h1 {
-                font-weight: bold;
+                font-weight: 500;
             }
         }
 
@@ -51,7 +72,7 @@
             bottom: -50%;
 
             h1 {
-                background-color: black;
+                background-color: transparentize($color: $bleu_f, $amount: 0.1);
                 box-shadow: 0 0 10px 0 $blue;
                 color: white;
                 border-radius: 10px;
@@ -60,6 +81,7 @@
                 padding: 15px;
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 font-weight: bold;
             }
         }
@@ -71,3 +93,45 @@
     }
 }
 
+.card:hover {
+    scale: 1.05;
+}
+
+.card-two {
+    margin-top: 7%;
+}
+
+.card-tree {
+    margin-top: 14%;
+}
+
+/********************************************** Responsive ******************************************/
+
+@media screen and (max-width: 600px){
+    .latest-projects {
+        padding: 10% 10% 5% 5%;
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+    
+        .card-img {
+            img {
+                height: 300px;
+            }
+        }
+    }
+
+    .card-one {
+        margin-top: 7%;
+    }
+
+    .card-two {
+        margin-top: 14%;
+    }
+
+    .card-tree {
+        margin-bottom: 7%;
+    }
+}

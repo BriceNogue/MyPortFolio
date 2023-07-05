@@ -71,6 +71,17 @@ $bleu_f: #363434d5;
     margin-right: 15px;
 }
 
+.nav_link a.active {
+    color: white;
+    background-color: $bleu_f;
+    display: flex;
+    width: 130px;
+    height: 35px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
 .email_link span a {
     margin: 0;
     color: white;
@@ -151,8 +162,14 @@ $bleu_f: #363434d5;
         width: 60px;
     }
 
-    .nav_bar_links {
-        display: none;
+    .nav_links {
+        width: 100%;
+        height: 100vh;
+        background: white;
+        color: $bleu_f;
+        display: inherit;
+        position: absolute;
+        left: 0;
     }
 
     .email_link {
